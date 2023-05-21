@@ -1,0 +1,44 @@
+
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: aqua;
+    padding: 5px;
+}
+
+.ulContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer input {
+    padding: 5px;
+    margin: 5px;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: antiquewhite;
+    margin-left: 900px;
+}
+form {
+    border: solid black;
+    border-radius: 5px;
+    
+}
+input {
+    text-align: center;
+}

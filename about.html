@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav>
+        <ul class="ulContainer">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+        </ul>
+    </nav>
+    <br>
+    <table>
+        <tr>
+            <th>Company Name</th>
+            <th>Company Address</th>
+            <th>Company Contact</th>
+        </tr>
+        <tbody id="dataBody"></tbody>
+    </table>
+    
+    <script>
+        var jsonData = localStorage.getItem("formData");
+        var formData = JSON.parse(jsonData);
+
+        var tableRow = "<tr>" +
+        "<td>" + formData.Name + "</td>" +
+        "<td>" + formData.Address + "</td>" +
+        "<td>" + formData.Contact + "</td>" +
+        "</tr>";
+        document.getElementById("dataBody").innerHTML = tableRow;
+    </script>
+    
+</body>
+</html>
